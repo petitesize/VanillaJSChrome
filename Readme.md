@@ -30,3 +30,42 @@ loginForm.addEventListener("submit", onLoginSubmit);
 - onLoginSubmit 호출
 - event object(해당 이벤트에서 일어난 정보를 담은 객체)를 argument로 준다
 - preventDefault에서 기본 동작인 submit 후 새로고침을 막아줌
+
+### 4. classList.add / classList.remove
+
+```
+function onLoginSubmit(event) {
+  event.preventDefault();
+  const username = loginInput.value;
+  loginForm.classList.add(HIDDEN_CLASSNAME); //loginForm에 hidden 클래스 추가
+  greeting.innerText = `Hello ${username}`;
+  greeting.classList.remove(HIDDEN_CLASSNAME);
+}
+```
+
+- submit 할 때 classList.add로 hidden 클래스를 주어 loginForm을 hidden
+- 그 후, classList.remove로 h1#grerting가 가지고 있는 hidden 클래스를 삭제하여 h1이 나타나게 한다.
+
+### 5. "hidden"의 반복 사용
+
+```
+function onLoginSubmit(event) {
+   ...
+ loginForm.classList.add("hidden");
+
+ greeting.classList.remove("hidden");
+```
+
+- 반복 사용되는 "hidden"을 변수 선언
+- string만 가지고 있는 변수를 선언할 때에는 변수명을 대문자로 선언해보자.(snake)
+
+```
+const HIDDEN_CLASSNAME = "hidden";
+
+function onLoginSubmit(event) {
+    ...
+  loginForm.classList.add(HIDDEN_CLASSNAME);
+
+  greeting.classList.remove(HIDDEN_CLASSNAME);
+
+```
