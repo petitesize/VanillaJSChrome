@@ -20,7 +20,7 @@ input 안의 button을 클릭하거나, type이 submit인 input을 클릭하면 
 
 - 따라서 click에 집중할 필요가 없다!
 - 대신 submit할 때 웹사이트가 새로고침 된다. : 내가 바라는게 아님!
-- arg.preventDefault : 브라우저의 기본 동작을 막아줌 (여기에선 새로고침)
+- arg.preventDefault : 브라우저의 기본 동작을 막아줌 (여기에선 submit)
 
 ```
 loginForm.addEventListener("submit", onLoginSubmit);
@@ -28,5 +28,5 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 - submit event 발생
 - onLoginSubmit 호출
-- event object를 argument로 준다
-- preventDefault에서 기본 동작인 새로고침을 막아줌
+- event object(해당 이벤트에서 일어난 정보를 담은 객체)를 argument로 준다
+- preventDefault에서 기본 동작인 submit 후 새로고침을 막아줌
