@@ -12,6 +12,7 @@ function onLoginSubmit(event) {
   const username = loginInput.value;
   loginForm.classList.add(HIDDEN_CLASSNAME); //loginForm에 hidden 클래스 추가
   greeting.innerText = `Hello ${username}`;
+  localStorage.setItem("username", username);
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 

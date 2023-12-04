@@ -69,3 +69,12 @@ function onLoginSubmit(event) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
 
 ```
+
+6. 입력한 username 저장
+
+```
+localStorage.setItem("username", username);
+```
+
+- key: "username", value: 입력한 username을 localStorage에 저장
+- localStorage는 개발자 도구 - Application에서 볼 수 있다
