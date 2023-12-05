@@ -70,7 +70,7 @@ function onLoginSubmit(event) {
 
 ```
 
-6. 입력한 username 저장
+### 6. 입력한 username 저장
 
 ```
 localStorage.setItem("username", username);
@@ -78,3 +78,7 @@ localStorage.setItem("username", username);
 
 - key: "username", value: 입력한 username을 localStorage에 저장
 - localStorage는 개발자 도구 - Application에서 볼 수 있다
+
+### 7. setInvterval(func,time)
+
+- func을 time마다 호출한다.
