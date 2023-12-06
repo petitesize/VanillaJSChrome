@@ -82,3 +82,13 @@ localStorage.setItem("username", username);
 ### 7. setInvterval(func,time)
 
 - func을 time마다 호출한다.
+
+### 8. padStart(number,string);
+
+```
+"1".padStart(2,"0");
+```
+
+- -> "01"
+- "1" 문자열의 길이가 2가 되도록 "0"을 문자열 앞에 넣는다
+- 끝에 넣기 위해서는 padEnd() 사용
