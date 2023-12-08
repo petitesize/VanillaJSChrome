@@ -92,3 +92,12 @@ localStorage.setItem("username", username);
 - -> "01"
 - "1" 문자열의 길이가 2가 되도록 "0"을 문자열 앞에 넣는다
 - 끝에 넣기 위해서는 padEnd() 사용
+
+### 9.appendChild, prepend
+
+```
+document.body.appendChild(bgImage);
+```
+
+- append는 body의 제일 마지막에
+- prepend는 가장 위에
