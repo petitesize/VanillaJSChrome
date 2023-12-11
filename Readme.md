@@ -105,4 +105,6 @@ document.body.appendChild(bgImage);
 ### 10. localStorage에는 Text만 저장될 수 있다.
 
 - array를 string으로 저장하고 싶다면?
-- JSON.stringify()
+- JSON.stringify(["ex", "ex1", "ex2"]); >> "["ex", "ex1", "ex2"]"
+- 반대로 string을 array로 저장하고 싶다면?
+- JSON.parse("["ex", "ex1", "ex2"]"); >> ["ex", "ex1", "ex2"]
