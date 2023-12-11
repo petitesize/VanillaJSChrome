@@ -101,3 +101,8 @@ document.body.appendChild(bgImage);
 
 - append는 body의 제일 마지막에
 - prepend는 가장 위에
+
+### 10. localStorage에는 Text만 저장될 수 있다.
+
+- array를 string으로 저장하고 싶다면?
+- JSON.stringify()
